@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SmartAssist | Home</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>SmartAssist</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Welcome to SmartAssist</h2>
+  <p>A simple static website with an interactive chatbot.</p>
+</section>
+
+<!-- Chatbot -->
+<div class="chatbot">
+  <div class="chat-header">🤖 SmartBot</div>
+  <div class="chat-body" id="chatBody">
+    <div class="bot">Hello! How can I help you?</div>
+  </div>
+  <div class="chat-footer">
+    <input type="text" id="userInput" placeholder="Type a message..." />
+    <button onclick="sendMessage()">Send</button>
+  </div>
+</div>
+
+<script src="js/chatbot.js"></script>
+</body>
+</html>
